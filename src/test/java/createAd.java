@@ -102,6 +102,16 @@ public class createAd {
         autoRuAddAdPage.$exchange.click();
 
 
+        //Выбираем доллар
+        autoRuAddAdPage.$currency.click();
+        int i;
+        for (i=0; i<1; i++) {
+            autoRuAddAdPage.$currency.sendKeys(DOWN);
+        }
+
+        autoRuAddAdPage.$currency.pressEnter();
+
+
         //Указываем дубликат ПТС, второго владельца, выбираем время покупки авто и устанавливаем чекбокс гарантии
         autoRuAddAdPage.$duplicate.click();
         autoRuAddAdPage.$secondOwner.click();
@@ -110,7 +120,6 @@ public class createAd {
         //Выбираем год покупки авто
         autoRuAddAdPage.$buyYear.click();
 
-        int i;
         for (i=0; i<8; i++) {
             autoRuAddAdPage.$buyYear.sendKeys(DOWN);
         }

@@ -67,6 +67,7 @@ public class AutoRuAddAdPage {
 
     public SelenideElement $priceForm = $(".price");
     public SelenideElement $price = $priceForm.$$("input").findBy(Condition.name("price"));
+    public SelenideElement $currency = $priceForm.$$("button").findBy(attribute("role", "listbox"));
     public SelenideElement $exchange = $priceForm.$$("input").findBy(Condition.name("exchange")).parent().parent();
 
     public SelenideElement $ptsForm = $(".pts");
