@@ -14,7 +14,7 @@ public class AutoRuAddAdPage {
 
 
     //Шаг 2
-    public SelenideElement $model = $$("div").findBy(Condition.text("X5"));
+    public SelenideElement $model = $$(".menu-item.menu-item_theme_islands.models-list__item.i-bem").get(14);
 
 
     //Шаг 3
